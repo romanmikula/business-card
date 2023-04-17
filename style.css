@@ -1,0 +1,57 @@
+body {
+    margin: 20px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+h2 {
+    font-weight: 600;
+    color: #FFD966;
+    letter-spacing: 3px;
+}
+
+h5 {
+    font-weight: 200;
+}
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    text-align: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(113,100,36,1) 100%, rgba(0,212,255,1) 100%);
+    color: #F4EEE0;
+    border-radius: 8px;
+    box-shadow: 8px 8px 6px lightslategrey;
+
+    /* Calling here animation name slidein from the @keyframes below */
+    animation-duration: 2s;
+    animation-name: slidein; 
+}
+
+.avatar {
+    width: 150px;
+}
+
+.card:hover {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(185,13,13,1) 100%, rgba(0,212,255,1) 100%);
+    color: #A5D7E8 ;
+}
+
+/* Adding some CSS animations */
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
